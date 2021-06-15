@@ -381,8 +381,8 @@
     <!-- Подвал -->
     <footer class="footer">
         <div class="container footer-container">
-            <div class="footer-address"><a href="index.html"
-                    class="logostudio">Web<span
+            <div class="footer-address">
+                <a href="index.html" class="logostudio">Web<span
                         class="logo-footer">Studio</span></a>
 
                 <address class="address-list">
@@ -437,6 +437,25 @@
                     </li>
                 </ul>
             </div>
+            <!-- <form class="contat-form">
+                <label for="name">Подпишитесь на рассылку</label>
+                <input type="text" name="name" id="name">
+                <button type="submit">Подписаться</button>
+            </form> -->
+            <form action="#" class="contat-form">
+                <input class="contat-form-input" name="user-name" type="text"
+                    placeholder="Имя*" minlength="3" required>
+                <input class="contat-form-input" name="user-email" type="email"
+                    placeholder="Почта*" required>
+                <input class="contat-form-input" name="user-phone" type="tel"
+                    placeholder="Телефон*" required>
+
+                <input type="checkbox" name="policy" id="policy">
+                <label for="policy">Соглашаюсь с рассылкой и принимаю Условия
+                    договора</label>
+                <button type="submit">Submit</button>
+            </form>
+
         </div>
     </footer>
     <script src="./js/modal.js"></script>

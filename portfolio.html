@@ -197,14 +197,13 @@
     <!-- Подвал -->
     <footer class="footer">
         <div class="container footer-container">
-            <div class="footer-address"><a href="index.html"
-                    class="logostudio">Web<span
-                        class="logo-footer">Studio</span></a>
-
+            <div class="footer-address">
+                <a href="index.html" class="logostudio">Web<span
+                        class="logo-footer">Studio</span>
+                </a>
                 <address class="address-list">
                     <p>г. Киев, пр-т Леси Украинки, 26</p>
                 </address>
-
                 <ul class="contact-footer list">
                     <li class="footer-item"> <a href="mailto:info@devstudio.com"
                             class="link-nav-footer touch-transform">
@@ -253,6 +252,22 @@
                     </li>
                 </ul>
             </div>
+            <!-- <div class="form-footer"> -->
+            <form class="form-footer" action="#">
+                <label class="form-label-footer" for="user-email">Подпишитесь на
+                    рассылку
+                </label>
+                <input class="btn-footer-input" type="email" name="user-email"
+                    id="user-email" placeholder="E-mail" required>
+                <button type="submit" class="form-btn-footer">Подписаться
+                    <svg class="icon-form-footer" width="24" height="24">
+                        <use
+                            href="./images/social.icons/sprite.svg#icon-airplane">
+                        </use>
+                    </svg>
+                </button>
+            </form>
+            <!-- </div> -->
         </div>
     </footer>
 </body>
