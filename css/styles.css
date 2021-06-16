@@ -173,7 +173,6 @@ p {
   letter-spacing: 0.03em;
   color: var(--white-color);
   margin-bottom: 9px;
-  margin-top: 20px;
 }
 
 .contact-footer {
@@ -656,6 +655,7 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-bottom: 20px;
 }
 
 /* Логотип в футере */
@@ -729,9 +729,37 @@ p {
 
 /* Форма */
 
-.contat-form {
+textarea {
+  resize: none;
 }
-.contat-form-input {
+
+.contact-form {
+  width: 528px;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid blue;
+  margin-bottom: 28px;
+}
+
+.form-box input {
+  margin: 0;
+  padding: 11px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-box label {
+  margin-bottom: 4px;
+}
+
+.contact-form-input {
 }
 
 /* Форма в футере */
@@ -787,11 +815,14 @@ p {
 } */
 
 .form-footer {
-  position: relative;
 }
 
-.form-label-footer {
+.form-footer-box {
   display: flex;
+  margin-left: auto;
+}
+
+.title-b {
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
@@ -800,6 +831,7 @@ p {
   text-transform: uppercase;
   color: var(--white-color);
 }
+
 .btn-footer-input {
   width: 358px;
   height: 50px;
@@ -811,8 +843,7 @@ p {
   background-color: var(--hero-color);
 }
 .form-btn-footer {
-  position: absolute;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 200px;
@@ -828,6 +859,14 @@ p {
   border: none;
   cursor: pointer;
 }
+
+.form-btn-footer:hover,
+.form-btn-footer:focus,
+.form-btn-footer:active {
+  color: var(--white-color);
+  background-color: var(--hover-button-color);
+}
+
 .icon-form-footer {
   fill: var(--white-color);
   margin-left: 10px;
