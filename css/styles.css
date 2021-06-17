@@ -677,6 +677,7 @@ p {
 }
 
 .footer-address {
+  width: 231px;
   margin-right: 70px;
 }
 
@@ -727,10 +728,26 @@ p {
   background-size: cover;
 }
 
-/* Форма */
+/* Форма в модальном окне */
 
 textarea {
   resize: none;
+}
+
+.form-box textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.title-modal-form {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
 }
 
 .contact-form {
@@ -738,13 +755,13 @@ textarea {
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .form-box {
   display: flex;
   flex-direction: column;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
   margin-bottom: 28px;
 }
 
@@ -757,6 +774,42 @@ textarea {
 
 .form-box label {
   margin-bottom: 4px;
+}
+
+.form-modal-btn {
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-modal-btn:hover,
+.form-modal-btn:focus {
+  background-color: var(--hover-button-color);
+}
+
+.policy {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.link-policy {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
 }
 
 .contact-form-input {
@@ -814,15 +867,14 @@ textarea {
   margin-left: 10px;
 } */
 
-.form-footer {
-}
+/* ФОРМА В ФУТЕРЕ */
 
 .form-footer-box {
   display: flex;
-  margin-left: auto;
 }
 
 .title-b {
+  display: block;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;

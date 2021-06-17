@@ -380,7 +380,8 @@
 
         <form action="#" class="contact-form">
 
-            <b>Оставьте свои данные, мы вам перезвоним</b>
+            <b class="title-modal-form">Оставьте свои данные, мы вам
+                перезвоним</b>
 
             <div class="form-box">
                 <label for="user-name">Имя</label>
@@ -408,11 +409,13 @@
             </div>
             <div class="form-box">
                 <input type="checkbox" name="policy" id="policy">
-                <label for="policy">Соглашаюсь с рассылкой и принимаю
-                    Условия
-                    договора</label>
+                <label class="policy" for="policy">Соглашаюсь с рассылкой и
+                    принимаю
+                    <a class="link-policy" href="#">Условия
+                        договора</a></label>
             </div>
-            <button type="submit">Отправить</button>
+            <button class="form-modal-btn touch-transform"
+                type="submit">Отправить</button>
         </form>
 
     </main>
@@ -475,44 +478,22 @@
                     </li>
                 </ul>
             </div>
-            <!-- <form class="contat-form">
-                <label for="name">Подпишитесь на рассылку</label>
-                <input type="text" name="name" id="name">
-                <button type="submit">Подписаться</button>
-            </form> -->
-            <!-- <form action="#" class="contact-form">
-                <div class="form-box">
-                    <label for="user-name">Name</label>
-                    <input class="contact-form-input" name="user-name"
-                        id="user-name" type="text" placeholder="Имя*"
-                        minlength="3" required>
-
+            <form action="#">
+                <b class="title-b">Подпишитесь на
+                    рассылку</b>
+                <div class="form-footer-box">
+                    <input class="btn-footer-input" type="email"
+                        name="user-email" placeholder="E-mail" required>
+                    <button type="submit"
+                        class="form-btn-footer touch-transform">Подписаться
+                        <svg class="icon-form-footer" width="24" height="24">
+                            <use
+                                href="./images/social.icons/sprite.svg#icon-airplane">
+                            </use>
+                        </svg>
+                    </button>
                 </div>
-                <div class="form-box">
-                    <label for="user-phone">Phone</label>
-                    <input class="contact-form-input" name="user-phone"
-                        id="user-phone" type="tel" placeholder="Телефон*"
-                        required>
-
-                </div>
-                <div class="form-box">
-                    <label for="user-email">Email</label>
-                    <input class="contact-form-input" name="user-email"
-                        id="user-email" type="email" placeholder="Почта*"
-                        required>
-
-                </div>
-                <div class="form-box">
-                    <label>Комментарий</label>
-                    <textarea name="comment"
-                        placeholder="Введите текст"></textarea>
-                </div>
-                <input type="checkbox" name="policy" id="policy">
-                <label for="policy">Соглашаюсь с рассылкой и принимаю Условия
-                    договора</label>
-                <button type="submit">Submit</button>
-            </form> -->
-
+            </form>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
