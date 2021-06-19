@@ -856,6 +856,10 @@ p {
   background-origin: border-box;
 }
 
+.checkbox:focus:not(:checked) + .checkbox-icon {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
 .checkbox-icon {
   display: inline-block;
   width: 16px;
@@ -899,7 +903,7 @@ p {
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
-  margin-left: 4px;
+  /* margin-left: 4px; */
   cursor: pointer;
 }
 
