@@ -1,5 +1,5 @@
 /* Переменные */
-:root {
+/* :root {
   --accent-color: #2196f3;
   --white-color: #ffffff;
   --title-color: #212121;
@@ -14,7 +14,7 @@
   --logo-font: 'Raleway', 'Arial', 'Helvetica', sans-serif;
   --main-font: 'Roboto', 'Arial', 'Helvetica', sans-serif;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* Глобальные стили */
 body {
@@ -49,6 +49,7 @@ h2,
 h3,
 h4,
 ul,
+ol,
 p {
   margin: 0;
 }
@@ -143,7 +144,7 @@ p {
 .current::after {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 4px;
   left: 0;
@@ -278,19 +279,21 @@ p {
 
 .modal-button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   background-color: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  margin-top: 8px;
-  margin-right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
+}
+
+.modal-button-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal-button:hover,
@@ -356,7 +359,7 @@ p {
 
 .features-item::before {
   display: block;
-  content: '';
+  content: "";
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
@@ -933,6 +936,7 @@ p {
   border-radius: 4px;
   background-color: transparent;
   cursor: pointer;
+  color: var(--white-color);
 }
 .form-btn-footer {
   display: flex;
@@ -961,3 +965,11 @@ p {
   fill: var(--white-color);
   margin-left: 10px;
 }
+
+/* Черновик по кальк */
+/* 100% ширина родителя(контейнера) минус сумма маржинов в одной строке и поделить на кол-во элементов в строке  */
+
+/* .flex-element {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+} */
